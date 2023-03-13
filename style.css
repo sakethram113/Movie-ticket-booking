@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+h1{
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+}
+body{
+    background-color: #242333;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+.movie-container{
+    color: black;
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    appearance: none;
+
+}
+.container{
+    perspective: 1000px;
+    margin-bottom: 30px;
+
+}
+.seat{
+    background-color: #444451;
+    height: 10px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.seat.selected{
+    background-color: #6feaf6;
+}
+.seat.occupied{
+    background-color: #fff;
+}
+.seat:nth-of-type(2){
+    margin-right: 18px;
+}
+.seat:nth-last-of-type(2){
+    margin-left: 18px;
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1.0);
+}
+.showcase{
+    background-color:  rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+    list-style-type:none;
+
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+
+}
+.showcase li small{
+    margin: 2px;
+}
+
+.row{
+    display: flex;
+}
+.screen{
+    background-color: #fff;
+    height: 70px;
+    width: 200px;
+    transform: rotateX(-45deg);
+    margin: 15px 0;
+    box-shadow: 0 10px 8px rgba(255, 255, 255, 0.7);
+
+}
+p.text{
+    margin: 5px 0;
+}
+p.text span {
+    color: #6feaf6;
+
+}
+.btn{
+    cursor: pointer;
+}
+.btn:hover{
+    color:grey;
+}
